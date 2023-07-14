@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="navbar navbar-expand-lg navbar-light navbar-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="mobileLogo" src="./images/logos/logo.svg" alt="">
+            <img class="deskLogo" src="./images/logos/Logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For Teachers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For Districts and Schools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ES</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary me-lg-2" type="button">Log In</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Contact Info -->
+    <section class="contactRequestDemoBlock">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading-lg color-blue">
+                        Take The Lead
+                        with <span class="color-primary">EduKonekti</span>!
+                    </h1>
+
+                    <div class="text">
+                        <p class="text-lg">
+                            Just fill out this form so we can personalize the right experience for you.
+                            Our <strong>EduKonekti</strong> experts will provide more information about the platform with a live-action demonstration.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/figures/map.png"></img>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <form>
+                        <!-- Contact Info -->
+                        <div>
+                            <h2 class="heading-md">Contact Info</h2>
+
+                            <div class="mb-4">
+                                <label for="name" class="visually-hidden">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="visually-hidden">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="visually-hidden">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <!-- /Contact Info -->
+
+                        <!-- Organization Info -->
+                        <div>
+                            <h2 class="heading-md">Organization Info</h2>
+
+                            <div class="mb-4">
+                                <label for="organization-name" class="visually-hidden">Name</label>
+                                <input type="text" class="form-control" id="organization-name" placeholder="Organization name">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="location" class="visually-hidden">Name</label>
+                                <select class="form-select" id="location">
+                                    <option selected>Location</option>
+                                    <option value="1">Los Angeles</option>
+                                    <option value="2">New York</option>
+                                    <option value="3">Miami</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Organization Info -->
+
+
+                        <!-- Size -->
+                        <div>
+                            <h2 class="heading-md">Size</h2>
+
+                            <div class="mb-4">
+                                <div>
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr-3" for="btnradio1">1 - 50</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-primary border-radius" for="btnradio2">51 - 200</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio3">201 - 500</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio4">501 - 1000</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio5">1001 - above</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Size -->
+
+
+                        <!-- Communicate Tools -->
+                        <div>
+                            <h2 class="heading-md">
+                                Select current tools use to communicate with stakeholders
+                            </h2>
+                            <span class="text">(All that apply)</span>
+
+                            <div class="mb-4">
+                                <div class="mb-4">
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr-3" for="btnradio6">Remind</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                                    <label class="btn btn-outline-primary border-radius" for="btnradio7">ClassDojo</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio8">Blackboard</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio9">TalkingPoints</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio11">Power School</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio12">Parent Square</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio13" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio13">School Messenger</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio14" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio14">WhatsApp</label>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="service-provider" class="visually-hidden">Name</label>
+                                    <input type="text" class="form-control" id="service-provider" placeholder="Other service provider">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Communicate Tools -->
+
+                        <!-- Student Information System (SIS) -->
+                        <div>
+                            <h2 class="heading-md">
+                                Select current Student Information System (SIS)
+                            </h2>
+
+                            <div class="mb-4">
+                                <div class="mb-4">
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio15" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr-3" for="btnradio16">Aeries</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio16" autocomplete="off">
+                                    <label class="btn btn-outline-primary border-radius" for="btnradio16">Synergy</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio17" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio17">Power School</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio18" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio18">Infinite Campus Inc.</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio19" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio19">Gradelink</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio20" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio20">Skyward</label>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="service-sis" class="visually-hidden">Name</label>
+                                    <input type="text" class="form-control" id="service-sis" placeholder="Other SIS provider">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Student Information System (SIS) -->
+
+                        <!-- Modules of Interest -->
+                        <div>
+                            <h2 class="heading-md">
+                                Modules of Interest
+                            </h2>
+
+                            <div class="mb-4">
+                                <div class="mb-4">
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio21" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr-3" for="btnradio21">Real-time mass communication</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio22" autocomplete="off">
+                                    <label class="btn btn-outline-primary border-radius" for="btnradio22">Appointment scheduling</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio23" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio23">Calendar</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio24" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio24">Direct phone calling (robo calling)</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio25" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio25">Direct phone SMS</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio26" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio26">Secure access</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio27" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr-3" for="btnradio27">Electronic signature collection</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio28" autocomplete="off">
+                                    <label class="btn btn-outline-primary border-radius" for="btnradio28">Emergency alerts</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio29" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio29">Surveys and Polls</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio30" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio30">Efficient Reports</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio31" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio31">Share documents</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio32" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio32">Translation to different languages</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio33" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio33">Sync with currrent SIS</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio34" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio34">Anouncements</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio35" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio35">Share documents</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio36" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio36">Attenance</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio37" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio37">Multi-system notifications</label>
+
+                                    <input type="checkbox" class="btn-check" name="btnradio" id="btnradio38" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio38">Customer Suppot</label>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="other-interests" class="visually-hidden">Name</label>
+                                    <input type="text" class="form-control" id="other-interests" placeholder="Other interests">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /Modules of Interest -->
+
+
+
+                        <button type="submit" class="button button-blue button-box-shadow">Request</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row firstRow">
+            <div class="col-12">
+                <div class="footer__firstBlock col-block">
+                    <img class="logo" src="./images/logos/Logo.svg" alt="EduKonekti Logo">
+                    <div class="text">
+                        <p>EduKonekti lets YOU take the lead in school!</p>
+                    </div>
+
+                    <div class="links">
+                        <a href="/" target="_blank" rel="noopener noreferrer" aria-label="Download EduKonekti (Opens in a new tab)">
+                            <img src="./images/figures/app-store.svg" alt="download on the App Store">
+                        </a>
+
+                        <a href="/" target="_blank" rel="noopener noreferrer" aria-label="Download EduKonekti (Opens in a new tab)">
+                            <img src="./images/figures/google-play.svg" alt="get it on Google play">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-block">
+                    <h2>SOLUTIONS</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" target="_self">For Teachers</a>
+                            </li>
+                            <li>
+                                <a href="" target="_self">For Districts and Schools</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-block">
+                    <h2>COMPANY</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" target="_self">About</a>
+                            </li>
+                            <li>
+                                <a href="" target="_self">Community Partners</a>
+                            </li>
+                            <li>
+                                <a href="" target="_self">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="" target="_self">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-block">
+                    <h2>RESOURCES</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" target="_self">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="" target="_self">Help Center</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-block">
+                    <h2>COMMUNITY</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" target="_self">SNS</a>
+                            </li>
+                            <li>
+                                <a href="" target="_self">Get In Touch</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row secondRow">
+            <div class="col-12">
+                <p>© All Rights Reserved <span>Konekti Technologies, Corp. 2023.</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
