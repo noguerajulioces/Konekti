@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>For Districts and Schools</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- css -->
@@ -14,37 +14,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="navbar navbar-expand-lg navbar-light navbar-transparent">
+
+<header id="header" class="navbar navbar-expand-lg navbar-transparent fixed-top navbar-white">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img class="mobileLogo" src="./images/logos/logo.svg" alt="">
             <img class="deskLogo" src="./images/logos/Logo.svg" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="navbar-btns">
+            <button class="button button-orange mobileContent" type="button">Log In</button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="4" cy="12" r="1" fill="white"/>
+                    <rect x="7" y="11" width="14" height="2" rx="0.94" fill="white"/>
+                    <rect x="3" y="16" width="18" height="2" rx="0.94" fill="white"/>
+                    <rect x="3" y="6" width="18" height="2" rx="0.94" fill="white"/>
+                </svg>
+            </button>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item menu-item">
                     <a class="nav-link" href="#">For Teachers</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item menu-item">
                     <a class="nav-link" href="#">For Districts and Schools</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">EN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ES</a>
-                </li>
-                <li class="nav-item">
-                    <button class="btn btn-primary me-lg-2" type="button">Log In</button>
-                </li>
             </ul>
+
+            <button class="button button-orange deskContent" type="button">Log In</button>
+
+            <div class="language">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ES</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
+
 <main>
+
+    <section class="heroBlock internal-pages" style="background-image: url(./images/figures/hero-01.svg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 order-2 order-lg-1">
+                    <div class="heroBlock__title mt-4">
+                        <h1 class="heading-lg color-blue">Measure Academic <br> Performance </h1>
+                        <p class="text-xl mb-5">
+                            <strong>EduKonekti Dashboard</strong>, an efficient tool to track student achievement and parent engagement by providing “real-time” analytics to School Administrators.
+                        </p>
+
+                        <div class="buttons">
+                            <a class="button button-orange" href="" target="">Get The App</a>
+                            <a class="button button-blue" href="" target="">Request a Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 order-1 order-lg-2">
+                    <img class="img" src="./images/figures/for-d-s.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- whyBlock -->
     <section class="whyBlock">
@@ -272,6 +311,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
-<!-- End Footer -->
 </body>
 </html>
