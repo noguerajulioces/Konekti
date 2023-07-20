@@ -805,11 +805,39 @@ body {
   }
 
   .deskContent {
-    display: block;
+    display: flex;
   }
 
   .deskContent img {
     width: 100%;
+  }
+
+  .deskContent .images {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    margin: 0px 0px 0px auto;
+  }
+
+  .download-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .download-links a {
+    cursor: pointer;
+    width: 180px;
+  }
+
+  .download-links a:first-of-type {
+   position: relative;
+   right: 20px;
+  }
+
+  .download-links a:nth-of-type(2){
+    position: relative;
+    left: 20px;
   }
 
   .downloadBlock__content p {
